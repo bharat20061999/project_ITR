@@ -9,7 +9,7 @@ export default function Home() {
       <div
         style={{
           fontSize: "50px",
-          fontWeight: "20px",
+
           textAlign: "center",
           marginTop: "170px",
           color: "blueviolet",
