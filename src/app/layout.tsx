@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import ThemeRegistry from "@/components/ThemeRegistry";
+import { Box } from "@mui/material";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Dhangurus",
@@ -16,15 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={inter.className}
-        style={{
-          backgroundImage:
-            "url('https://thumbor.forbes.com/thumbor/fit-in/1290x/https://www.forbes.com/advisor/wp-content/uploads/2022/07/finance.jpeg.jpg')",
-        }}
-      >
-        {children}
-      </body>
+      <ThemeRegistry>
+        <body>
+          <Box>
+            <Navbar />
+          </Box>
+          {children}
+        </body>
+      </ThemeRegistry>
     </html>
   );
 }
