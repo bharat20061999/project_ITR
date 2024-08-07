@@ -15,7 +15,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { log } from "console";
 
-const pages = ["Products", "Pricing", "Blog"];
+const pages = ["ITR Filling", "Pricing", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"]; // after login
 
 function Navbar() {
@@ -24,7 +24,7 @@ function Navbar() {
     console.log(index);
   };
   return (
-    <AppBar position="static" color="transparent">
+    <AppBar position="relative" color="transparent">
       <Container>
         <Toolbar>
           <Typography

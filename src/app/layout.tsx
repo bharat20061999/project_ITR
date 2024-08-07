@@ -7,6 +7,9 @@ import Navbar from "@/components/Navbar";
 export const metadata: Metadata = {
   title: "Dhangurus",
   description: "One Stop Solution for Finance",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
